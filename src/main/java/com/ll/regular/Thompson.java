@@ -1,4 +1,4 @@
-package regular;
+package com.ll.regular;
 
 /**
  * Created by liaoli
@@ -10,7 +10,7 @@ package regular;
 /*
     Thompson.java
         Compiler for Regular Expressions to Non-Deterministic Finite
-        Automata (NFA). Currently set to only work on regular expressions
+        Automata (NFA). Currently set to only work on com.ll.regular expressions
         with the alphabet of ['a','z'].
 
         This works as a Left to Right comiler, giving precedence to the left
@@ -88,7 +88,7 @@ public class Thompson{
     }
 
     /*
-        kleene() - Highest Precedence regular expression operator. Thompson
+        kleene() - Highest Precedence com.ll.regular expression operator. Thompson
             algoritm for kleene star.
     */
     public static NFA kleene(NFA n){
@@ -166,7 +166,7 @@ public class Thompson{
     }
 
     /*
-        union() - Lowest Precedence regular expression operator. Thompson
+        union() - Lowest Precedence com.ll.regular expression operator. Thompson
             algorithm for union (or).
     */
     public static NFA union(NFA n, NFA m){
@@ -242,7 +242,7 @@ public class Thompson{
     public static boolean validRegExChar(char c){
         return alphabet(c) || regexOperator(c);
     }
-    // validRegEx() - checks if given string is a valid regular expression.
+    // validRegEx() - checks if given string is a valid com.ll.regular expression.
     public static boolean validRegEx(String regex){
         if (regex.isEmpty()) {
             return false;
@@ -381,12 +381,12 @@ public class Thompson{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         String line;
-        System.out.println("\nEnter a regular expression with the " +
+        System.out.println("\nEnter a com.ll.regular expression with the " +
                 "alphabet ['a','z'] & E for empty "+"\n* for Kleene Star" +
                 "\nelements with nothing between them indicates " +
                 "concatenation "+ "\n| for Union \n\":q\" to quit");
         while(sc.hasNextLine()){
-            System.out.println("Enter a regular expression with the " +
+            System.out.println("Enter a com.ll.regular expression with the " +
                     "alphabet ['a','z'] & E for empty "+"\n* for Kleene Star" +
                     "\nelements with nothing between them indicates " +
                     "concatenation "+ "\n| for Union \n\":q\" to quit");

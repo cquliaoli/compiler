@@ -1,4 +1,4 @@
-package regular;
+package com.ll.regular;
 
 import java.util.ArrayList;
 import java.util.Objects;

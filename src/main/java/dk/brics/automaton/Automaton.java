@@ -34,7 +34,7 @@ import java.net.URL;
 import java.util.*;
 
 /**
- * Finite-state automaton with regular expression operations.
+ * Finite-state automaton with com.ll.regular expression operations.
  * <p>
  * Class invariants:
  * <ul>

@@ -179,7 +179,7 @@ public class RegExp {
 	 * Constructs new <code>RegExp</code> from a string. 
 	 * Same as <code>RegExp(s, ALL)</code>.
 	 * @param s regexp string
-	 * @exception IllegalArgumentException if an error occured while parsing the regular expression
+	 * @exception IllegalArgumentException if an error occured while parsing the com.ll.regular expression
 	 */
 	public RegExp(String s) throws IllegalArgumentException {
 		this(s, ALL);
@@ -189,7 +189,7 @@ public class RegExp {
 	 * Constructs new <code>RegExp</code> from a string. 
 	 * @param s regexp string
 	 * @param syntax_flags boolean 'or' of optional syntax constructs to be enabled
-	 * @exception IllegalArgumentException if an error occured while parsing the regular expression
+	 * @exception IllegalArgumentException if an error occured while parsing the com.ll.regular expression
 	 */
 	public RegExp(String s, int syntax_flags) throws IllegalArgumentException {
 		b = s;
@@ -236,7 +236,7 @@ public class RegExp {
 	 * The constructed automaton is minimal and deterministic and has no 
 	 * transitions to dead states. 
 	 * @param automaton_provider provider of automata for named identifiers
-	 * @exception IllegalArgumentException if this regular expression uses
+	 * @exception IllegalArgumentException if this com.ll.regular expression uses
 	 *   a named identifier that is not available from the automaton provider
 	 */
 	public Automaton toAutomaton(AutomatonProvider automaton_provider) throws IllegalArgumentException {
@@ -248,7 +248,7 @@ public class RegExp {
 	 * The constructed automaton has no transitions to dead states. 
 	 * @param automaton_provider provider of automata for named identifiers
 	 * @param minimize if set, the automaton is minimized and determinized
-	 * @exception IllegalArgumentException if this regular expression uses
+	 * @exception IllegalArgumentException if this com.ll.regular expression uses
 	 *   a named identifier that is not available from the automaton provider
 	 */
 	public Automaton toAutomaton(AutomatonProvider automaton_provider, boolean minimize) throws IllegalArgumentException {
@@ -261,7 +261,7 @@ public class RegExp {
 	 * transitions to dead states. 
 	 * @param automata a map from automaton identifiers to automata 
 	 *   (of type <code>Automaton</code>).
-	 * @exception IllegalArgumentException if this regular expression uses
+	 * @exception IllegalArgumentException if this com.ll.regular expression uses
 	 *   a named identifier that does not occur in the automaton map
 	 */
 	public Automaton toAutomaton(Map<String, Automaton> automata) throws IllegalArgumentException {
@@ -274,7 +274,7 @@ public class RegExp {
 	 * @param automata a map from automaton identifiers to automata 
 	 *   (of type <code>Automaton</code>).
 	 * @param minimize if set, the automaton is minimized and determinized
-	 * @exception IllegalArgumentException if this regular expression uses
+	 * @exception IllegalArgumentException if this com.ll.regular expression uses
 	 *   a named identifier that does not occur in the automaton map
 	 */
 	public Automaton toAutomaton(Map<String, Automaton> automata, boolean minimize) throws IllegalArgumentException {
@@ -429,7 +429,7 @@ public class RegExp {
 	}
 
 	/** 
-	 * Constructs string from parsed regular expression. 
+	 * Constructs string from parsed com.ll.regular expression.
 	 */
 	@Override
 	public String toString() {
@@ -533,7 +533,7 @@ public class RegExp {
 	}
 
 	/** 
-	 * Returns set of automaton identifiers that occur in this regular expression. 
+	 * Returns set of automaton identifiers that occur in this com.ll.regular expression.
 	 */
 	public Set<String> getIdentifiers() {
 		HashSet<String> set = new HashSet<String>();
